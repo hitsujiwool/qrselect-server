@@ -1,0 +1,5 @@
+environment: development
+servers: 1
+daemonize: false
+rackup: config.ru
+port: 3000

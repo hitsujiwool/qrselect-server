@@ -1,0 +1,8 @@
+.bundle
+vendor/bundle
+tmp/*
+!tmp/.gitkeep
+log/*
+!log/.gitkeep
+qrselect.conf
+Gemfile.lock

@@ -1,0 +1,13 @@
+bing_app_id: bing_api_key ## BingのAPIキー
+mysql_dbname: db_name ## DB名
+mysql_user: db_username@localhost ## MySQLのユーザー名
+mysql_password: db_password ## MySQLのパスワード
+additional_keywords: ## クエリに付加するキーワード一覧
+  - 原文
+  - 翻訳
+  - ソース
+  - 英語
+  - 元記事
+  - オリジナル
+  - 原著
+  - 原語
