@@ -11,7 +11,7 @@ before do
 end
 
 get '/' do
-  keywords = params[:k]
+  keywords = params[:k] || return
   tmp = {}
   params.each do |k, v|
     case k
