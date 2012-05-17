@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 require 'sinatra'
-require 'sinatra-streaming'
+require 'sinatra/streaming'
 require 'qrselect'
 require 'json'
 
@@ -28,9 +28,9 @@ get '/' do
   end
   stream do |out|
     QRSelect.fetch(keywords, tmp) do |result|
-      break if out.closed?
       next if result.candidates.empty?
       en_text = result.highest_score_text
+      break if out.closed?
       out << { 
         :ja_url => result.seed.url,
         :ja_title => result.seed.title,
