@@ -1,5 +1,6 @@
 environment: development
 servers: 1
-daemonize: false
+daemonize: true
 rackup: config.ru
 port: 3000
+timeout: 0
